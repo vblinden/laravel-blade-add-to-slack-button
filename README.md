@@ -7,40 +7,12 @@
 
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
 
-## Support us
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/laravel-blade-add-to-slack-button.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/laravel-blade-add-to-slack-button)
-
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
-
 ## Installation
 
 You can install the package via composer:
 
 ```bash
 composer require vblinden/laravel-blade-add-to-slack-button
-```
-
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="laravel-blade-add-to-slack-button-migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="laravel-blade-add-to-slack-button-config"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
 ```
 
 Optionally, you can publish the views using
@@ -51,9 +23,47 @@ php artisan vendor:publish --tag="laravel-blade-add-to-slack-button-views"
 
 ## Usage
 
-```php
-$laravelBladeAddToSlackButton = new Vblinden\LaravelBladeAddToSlackButton();
-echo $laravelBladeAddToSlackButton->echoPhrase('Hello, Vblinden!');
+### Basic Usage
+
+Use the Blade component to render an "Add to Slack" button:
+
+```blade
+<x-add-to-slack::button href="your-oauth-flow" />
+```
+
+### Customization Options
+
+#### Large Button
+
+```blade
+<x-add-to-slack::button href="your-oauth-url" large />
+```
+
+#### Custom Label
+
+```blade
+<x-add-to-slack::button href="your-oauth-flow" label="Install App" />
+```
+
+#### Additional HTML Attributes
+
+You can pass any additional HTML attributes to the button:
+
+```blade
+<x-add-to-slack::button 
+    href="your-oauth-flow"
+    target="_blank"
+    rel="noopener"
+    class="my-custom-class"
+/>
+```
+
+### Slack Icon Component
+
+You can also use the Slack icon separately:
+
+```blade
+<x-add-to-slack::icon />
 ```
 
 ## Testing
@@ -78,6 +88,10 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 - [vblinden](https://github.com/vblinden)
 - [All Contributors](../../contributors)
+
+## Disclaimer
+
+Slack is a trademark of Slack Technologies, LLC, a Salesforce company. This package is not affiliated with, endorsed by, or sponsored by them.
 
 ## License
 
