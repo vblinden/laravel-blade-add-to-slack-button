@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Vblinden\LaravelBladeAddToSlackButton\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelBladeAddToSlackButtonCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-blade-add-to-slack-button';
 
     public $description = 'My command';
 
