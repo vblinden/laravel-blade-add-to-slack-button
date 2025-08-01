@@ -5,7 +5,7 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/vblinden/laravel-blade-add-to-slack-button/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/vblinden/laravel-blade-add-to-slack-button/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/vblinden/laravel-blade-add-to-slack-button.svg?style=flat-square)](https://packagist.org/packages/vblinden/laravel-blade-add-to-slack-button)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+Easily add an "Add to Slack" button to your site.
 
 ## Installation
 
@@ -13,6 +13,17 @@ You can install the package via composer:
 
 ```bash
 composer require vblinden/laravel-blade-add-to-slack-button
+```
+
+Run the install command
+```bash
+php artisan add-to-slack:install
+```
+
+Add CSS via build tool or simply add with stylesheet link
+```css
+@import '../../public/vendor/add-to-slack/css/button.css';
+<link rel="stylesheet" href="/vendor/add-to-slack/css/button.css">
 ```
 
 Optionally, you can publish the views using
