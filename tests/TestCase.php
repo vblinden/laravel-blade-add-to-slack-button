@@ -4,7 +4,7 @@ namespace Vblinden\LaravelBladeAddToSlackButton\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Vblinden\LaravelBladeAddToSlackButton\LaravelBladeAddToSlackButtonServiceProvider;
+use Vblinden\LaravelBladeAddToSlackButton\ServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -20,7 +20,7 @@ class TestCase extends Orchestra
     protected function getPackageProviders($app)
     {
         return [
-            LaravelBladeAddToSlackButtonServiceProvider::class,
+            ServiceProvider::class,
         ];
     }
 

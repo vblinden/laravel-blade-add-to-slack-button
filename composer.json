@@ -4,6 +4,8 @@
     "keywords": [
         "vblinden",
         "laravel",
+        "blade",
+        "add-to-slack",
         "laravel-blade-add-to-slack-button"
     ],
     "homepage": "https://github.com/vblinden/laravel-blade-add-to-slack-button",
@@ -62,11 +64,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Vblinden\\LaravelBladeAddToSlackButton\\LaravelBladeAddToSlackButtonServiceProvider"
-            ],
-            "aliases": {
-                "LaravelBladeAddToSlackButton": "Vblinden\\LaravelBladeAddToSlackButton\\Facades\\LaravelBladeAddToSlackButton"
-            }
+                "Vblinden\\LaravelBladeAddToSlackButton\\LaravelBladeAddToSlackServiceProvider"
+            ]
         }
     },
     "minimum-stability": "dev",
