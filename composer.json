@@ -64,7 +64,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Vblinden\\LaravelBladeAddToSlackButton\\LaravelBladeAddToSlackServiceProvider"
+                "Vblinden\\LaravelBladeAddToSlackButton\\LaravelBladeAddToSlackButtonServiceProvider"
             ]
         }
     },
