@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-blade-add-to-slack-button` will be documented in this file.
 
+## v1.0.1 - 2025-08-01
+
+**Full Changelog**: https://github.com/vblinden/laravel-blade-add-to-slack-button/compare/v1.0.0...v1.0.1
+
 ## v1.0.0 - 2025-08-01
 
 ### What's Changed
