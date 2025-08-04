@@ -23,6 +23,9 @@ php artisan add-to-slack:install
 Add CSS via build tool or simply add with stylesheet link
 ```css
 @import '../../public/vendor/add-to-slack/css/button.css';
+```
+
+```html
 <link rel="stylesheet" href="/vendor/add-to-slack/css/button.css">
 ```
 
